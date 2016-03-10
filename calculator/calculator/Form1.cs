@@ -26,5 +26,29 @@ namespace calculator
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(textBox1.Text);
+            double secArg = Convert.ToDouble(textBox2.Text);
+            double result = firstArg - secArg;
+            label1.Text = result.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(textBox1.Text);
+            double secArg = Convert.ToDouble(textBox2.Text);
+            double result = firstArg * secArg;
+            label1.Text = result.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(textBox1.Text);
+            double secArg = Convert.ToDouble(textBox2.Text);
+            double result = firstArg / secArg;
+            label1.Text = result.ToString();
+        }
+
     }
 }
