@@ -26,5 +26,19 @@ namespace calculator
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OneCalculate(object sender, EventArgs e)
+        {
+            double firstArg = Convert.ToDouble(textBox1.Text);
+           
+            IOneCalculator calc = OneFactory.CreateCalculator(((Button)sender).Name);
+            var result = calc.Doit(firstArg);
+            label1.Text = result.ToString();
+        }
+
     }
 }
