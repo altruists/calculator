@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using calculator.OneOpeation;
+using calculator.TwoOperataion;
 
 namespace calculator
 {
@@ -26,15 +21,9 @@ namespace calculator
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void OneCalculate(object sender, EventArgs e)
         {
             double firstArg = Convert.ToDouble(textBox1.Text);
-           
             IOneCalculator calc = OneFactory.CreateCalculator(((Button)sender).Name);
             var result = calc.Doit(firstArg);
             label1.Text = result.ToString();
