@@ -1,6 +1,6 @@
 ﻿namespace calculator.TwoOperataion
 {
-    class Multiply: ICalculator
+   public class Multiply: ICalculator
     {
         public double Doit(double first, double second)
         {

@@ -2,7 +2,7 @@
 
 namespace calculator.OneOpeation
 {
-    class EinDegree : IOneCalculator
+    public class EinDegree : IOneCalculator
     {
         public double Doit(double first)
         {

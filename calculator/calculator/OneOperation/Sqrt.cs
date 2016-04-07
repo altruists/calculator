@@ -2,7 +2,7 @@
 
 namespace calculator.OneOpeation
 {
-    class Sqrt : IOneCalculator
+    public class Sqrt : IOneCalculator
     {
         public double Doit(double first)
         {

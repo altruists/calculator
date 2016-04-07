@@ -44,7 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="OneOperation\CosxTests.cs" />
+    <Compile Include="OneOperation\EinDegreeTests.cs" />
+    <Compile Include="OneOperation\SinxTests.cs" />
+    <Compile Include="OneOperation\SqrtTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TwoOperation\DivideTests.cs" />
+    <Compile Include="TwoOperation\MinusTests.cs" />
+    <Compile Include="TwoOperation\MultiplyTests.cs" />
     <Compile Include="TwoOperation\PlusTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,9 +63,7 @@
       <Name>calculator</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OneOperation\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>

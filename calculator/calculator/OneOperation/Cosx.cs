@@ -2,7 +2,7 @@
 
 namespace calculator.OneOpeation
 {
-    class Cosx:IOneCalculator
+    public class Cosx:IOneCalculator
     {
         public double Doit(double first)
         {
