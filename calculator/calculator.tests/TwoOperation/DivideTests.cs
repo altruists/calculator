@@ -17,11 +17,12 @@ namespace calculator.tests.TwoOperation
             Assert.AreEqual(expected, result);
         }
 
-//        [Test]
-//        public void Zero()
-//        {
-            
+        [Test]
+        public void Zero()
+        {
+            Divide calcul = new Divide();
+            Assert.Throws<Exception>(() => calcul.Doit(1, 0));
 
-//        }
+        }
     }
 }
