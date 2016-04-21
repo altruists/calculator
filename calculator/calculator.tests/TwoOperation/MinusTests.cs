@@ -1,17 +1,21 @@
-﻿using NUnit.Framework;
-using calculator.TwoOperataion;
+﻿using System;
+using calculator.TwoOperation;
+using NUnit.Framework;
 
 namespace calculator.tests.TwoOperation
 {
     [TestFixture]
     class MinusTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(3, 1, 2)]
+        [TestCase(16, 6, 10)]
+        [TestCase(956, 400, 556)]
+        public void SimpleTest(double first, double second, double expected)
         {
-            Minus calcul = new Minus();
-            double res = calcul.Doit(53, 43);
-            Assert.AreEqual(10, res);
-        }  
+            Minus calculator = new Minus();
+            double result = calculator.Doit(first, second);
+            Assert.AreEqual(expected, result);
+
+        }
     }
 }

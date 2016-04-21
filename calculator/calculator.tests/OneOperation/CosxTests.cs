@@ -1,4 +1,5 @@
-﻿using calculator.OneOpeation;
+﻿using System;
+using calculator.OneOperation;
 using NUnit.Framework;
 
 
@@ -7,12 +8,15 @@ namespace calculator.tests.OneOperation
     [TestFixture]
     public class CosxTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(0, 1)]
+        [TestCase(Math.PI/3, 0.5 )]
+        [TestCase(Math.PI/2, 0)]
+        public void SimpleTest(double first,  double expected)
         {
             Cosx calculator = new Cosx();
-            double result = calculator.Doit(0);
-            Assert.AreEqual(1, result);
+            double result = calculator.Doit(first);
+            Assert.AreEqual(expected, result, 0.000001);
+
         }
     }
 }

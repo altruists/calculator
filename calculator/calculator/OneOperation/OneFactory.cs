@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace calculator.OneOpeation
+namespace calculator.OneOperation
 {
     class OneFactory
     {

@@ -1,4 +1,5 @@
-﻿using calculator.TwoOperataion;
+﻿using System;
+using calculator.TwoOperation;
 using NUnit.Framework;
 
 namespace calculator.tests.TwoOperation

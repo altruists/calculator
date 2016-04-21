@@ -1,4 +1,5 @@
-﻿using calculator.OneOpeation;
+﻿using System;
+using calculator.OneOperation;
 using NUnit.Framework;
 
 namespace calculator.tests.OneOperation
@@ -6,12 +7,15 @@ namespace calculator.tests.OneOperation
      [TestFixture]
     public class EinDegreeTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(1, 2.718281)]
+        [TestCase(2, 7.389056)]
+        [TestCase(0, 1)]
+        public void SimpleTest(double first, double expected)
         {
             EinDegree calculator = new EinDegree();
-            double result = calculator.Doit(3);
-            Assert.AreEqual(20.0855369, result, 0.001);
-        }  
+            double result = calculator.Doit(first);
+            Assert.AreEqual(expected, result, 0.000001);
+
+        }
     }
-}
+ }

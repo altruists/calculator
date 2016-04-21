@@ -1,4 +1,5 @@
-﻿using calculator.OneOpeation;
+﻿using System;
+using calculator.OneOperation;
 using NUnit.Framework;
 
 namespace calculator.tests.OneOperation
@@ -6,12 +7,15 @@ namespace calculator.tests.OneOperation
      [TestFixture]
     public class SqrtTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(25, 5)]
+        [TestCase(4, 2)]
+        [TestCase(1, 1)]
+        public void SimpleTest(double first, double expected)
         {
             Sqrt calculator = new Sqrt();
-            double result = calculator.Doit(25);
-            Assert.AreEqual(5, result);
-        }   
+            double result = calculator.Doit(first);
+            Assert.AreEqual(expected, result, 0.000001);
+
+        }
     }
-}
+ }

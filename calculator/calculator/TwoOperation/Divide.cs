@@ -1,4 +1,4 @@
-﻿namespace calculator.TwoOperataion
+﻿namespace calculator.TwoOperation
 {
     public class Divide: ICalculator
     {

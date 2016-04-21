@@ -1,4 +1,5 @@
-﻿using calculator.TwoOperataion;
+﻿using System;
+using calculator.TwoOperation;
 using NUnit.Framework;
 
 namespace calculator.tests.TwoOperation
@@ -6,20 +7,21 @@ namespace calculator.tests.TwoOperation
     [TestFixture]
     class DivideTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(1, 1, 1)]
+        [TestCase(4, 2, 2)]
+        [TestCase(76284, 489, 156)]
+        public void SimpleTest(double first, double second, double expected)
         {
             Divide calcul = new Divide();
-            double res = calcul.Doit(40, 5);
-            Assert.AreEqual(8, res);
+            double result = calcul.Doit(first, second);
+            Assert.AreEqual(expected, result);
         }
 
-        [Test]
-        public void SimpleTest()
-        {
-            Divide calcul = new Divide();
-            double res = calcul.Doit(40, 5);
-            Assert.AreEqual(8, res);
-        }
+//        [Test]
+//        public void Zero()
+//        {
+            
+
+//        }
     }
 }

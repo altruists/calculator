@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace calculator.OneOpeation
+namespace calculator.OneOperation
 {
     public class EinDegree : IOneCalculator
     {

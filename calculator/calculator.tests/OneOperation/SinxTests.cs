@@ -1,4 +1,5 @@
-﻿using calculator.OneOpeation;
+﻿using System;
+using calculator.OneOperation;
 using NUnit.Framework;
 
 namespace calculator.tests.OneOperation
@@ -6,12 +7,15 @@ namespace calculator.tests.OneOperation
     [TestFixture]
     public class SinxTests
     {
-             [Test]
-        public void SimpleTest()
+        [TestCase(0, 0)]
+        [TestCase(Math.PI / 6, 0.5)]
+        [TestCase(Math.PI / 2, 1)]
+        public void SimpleTest(double first, double expected)
         {
             Sinx calculator = new Sinx();
-            double result = calculator.Doit(0);
-            Assert.AreEqual(0, result);
+            double result = calculator.Doit(first);
+            Assert.AreEqual(expected, result, 0.000001);
+
         }
-    }  
     }
+}

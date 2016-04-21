@@ -1,4 +1,4 @@
-﻿namespace calculator.OneOpeation
+﻿namespace calculator.OneOperation
 {
     public interface IOneCalculator
     {

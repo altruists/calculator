@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using calculator.OneOpeation;
-using calculator.TwoOperataion;
+using calculator.OneOperation;
+using calculator.TwoOperation;
 
 namespace calculator
 {

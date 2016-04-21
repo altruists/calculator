@@ -1,4 +1,5 @@
-﻿using calculator.TwoOperataion;
+﻿using System;
+using calculator.TwoOperation;
 using NUnit.Framework;
 
 namespace calculator.tests.TwoOperation
@@ -6,12 +7,15 @@ namespace calculator.tests.TwoOperation
     [TestFixture]
     class PlusTests
     {
-        [Test]
-        public void SimpleTest()
+        [TestCase(1, 1, 2)]
+        [TestCase(4, 6, 10)]
+        [TestCase(156, 400, 556)]
+        public void SimpleTest(double first, double second, double expected)
         {
-            Plus calcul = new Plus();
-            double res = calcul.Doit(23, 43);
-            Assert.AreEqual(66, res);
+            Plus calculator = new Plus();
+            double result = calculator.Doit(first, second);
+            Assert.AreEqual(expected, result);
+
         }
     }
 }

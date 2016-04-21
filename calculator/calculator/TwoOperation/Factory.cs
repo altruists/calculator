@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace calculator.TwoOperataion
+namespace calculator.TwoOperation
 {
     public static class Factory
     {
