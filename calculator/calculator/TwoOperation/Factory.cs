@@ -2,6 +2,9 @@
 
 namespace calculator.TwoOperation
 {
+    /// <summary>
+    /// Here is buttons which contain operations with two args 
+    /// </summary>
     public static class Factory
     {
         public static ICalculator CreateCalculator(string name)

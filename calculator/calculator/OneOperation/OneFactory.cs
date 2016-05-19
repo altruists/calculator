@@ -2,7 +2,11 @@
 
 namespace calculator.OneOperation
 {
-    class OneFactory
+    /// <summary>
+    /// Here is buttons which contain operations with one arg
+    /// </summary>
+ 
+    public static class OneFactory
     {
 
         public static IOneCalculator CreateCalculator(string name)
