@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OneOperation\Cosx.cs" />
+    <Compile Include="OneOperation\Asinx.cs" />
+    <Compile Include="OneOperation\Acosx.cs" />
+    <Compile Include="OneOperation\log10.cs" />
     <Compile Include="TwoOperation\Divide.cs" />
     <Compile Include="OneOperation\EinDegree.cs" />
     <Compile Include="TwoOperation\Factory.cs" />
@@ -64,6 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OneOperation\Sinx.cs" />
     <Compile Include="OneOperation\Sqrt.cs" />
+    <Compile Include="TwoOperation\Pow.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

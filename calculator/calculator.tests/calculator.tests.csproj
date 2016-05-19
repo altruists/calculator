@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="OneOperation\AcosxTests.cs" />
+    <Compile Include="OneOperation\AsinxTests.cs" />
     <Compile Include="OneOperation\CosxTests.cs" />
     <Compile Include="OneOperation\EinDegreeTests.cs" />
+    <Compile Include="OneOperation\log10Tests.cs" />
     <Compile Include="OneOperation\SinxTests.cs" />
     <Compile Include="OneOperation\SqrtTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +56,7 @@
     <Compile Include="TwoOperation\MinusTests.cs" />
     <Compile Include="TwoOperation\MultiplyTests.cs" />
     <Compile Include="TwoOperation\PlusTests.cs" />
+    <Compile Include="TwoOperation\powTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

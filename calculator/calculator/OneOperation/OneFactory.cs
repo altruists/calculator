@@ -26,6 +26,18 @@ namespace calculator.OneOperation
                     {
                         return new EinDegree();
                     }
+                case "button10":
+                    {
+                        return new log10();
+                    }
+                case "button11":
+                    {
+                        return new Asinx();
+                    }
+                case "button12":
+                    {
+                        return new Acosx();
+                    }
                 default:
                     throw new Exception("Sorry you are not winner");
 

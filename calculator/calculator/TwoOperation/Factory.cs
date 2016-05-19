@@ -24,6 +24,10 @@ namespace calculator.TwoOperation
                 {
                     return new Minus();
                 }
+                case "button9":
+                {
+                    return new Pow();
+                }
                 default:
                     throw new Exception("Sorry you are not winner");
 
